@@ -9,32 +9,32 @@ String? textValidator(String? value, { text = "Introduce el texto requerido" }) 
 
   String? dayValidator(String? value) {
     if (value == null || value.isEmpty || int.parse(value) < 0 || int.parse(value) > 31) {
-      return "Introduse un dia valido";
+      return "Introduce un dia valido";
     }
     return null;
   }
 
   String? monthValidator(String? value) {
     if (value == null || value.isEmpty) {
-      return "Introduse un mes valido";
+      return "Introduce un mes valido";
     }
     return null;
   }
 
   String? yearValidator(String? value) {
     if (value == null || value.isEmpty || int.parse(value) < 1920 || int.parse(value) > 2024) {
-      return "Introduse un año valido";
+      return "Introduce un año valido";
     }
     return null;
   }
 
     String? emailValidator(String? value) {
     if (value == null || value.isEmpty) {
-      return "Introduse tu email";
+      return "Introduce tu email";
     }
     if (!RegExp(r'^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$')
         .hasMatch(value)) {
-      return "Introduse un email valido";
+      return "Introduce un email valido";
     }
     return null;
   }
